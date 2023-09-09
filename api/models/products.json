@@ -1,0 +1,65 @@
+[
+  {
+    "id": "fcb72e99-76ef-4e0f-80c8-d40a1cd7dfff",
+    "product": "Teclado Mecanico G915",
+    "brand": "Logitech",
+    "price": 1200000,
+    "state": "Disponible",
+    "description":
+      "El teclado mecanico G915 incorpora tecnología LIGHTSPEED inalámbrica de calidad profesional, RGB LIGHTSYNC avanzada y nuevos interruptores mecánicos de alto desempeño y perfil bajo. ",
+    "photo":
+      "https://nuevowevo.com/wp-content/uploads/2023/08/teclado-mecanico-logitech-G915-Negro-5.jpg",
+    "type": ["Teclado", "Inalambrico"],
+    "rate": 5
+  },
+  {
+    "id": "db1d8581-fadf-4fcb-b711-675a2d8c17b5",
+    "product": "Audífonos con cable y micrófono INZONE H3 para juegos",
+    "brand": "Sony",
+    "price": 313500,
+    "state": "Agotado",
+    "description":
+      "Prepárate para las misiones con los audífonos con cable INZONE H3 para juegos de Sony. Los audífonos tienen sonido espacial 360, ideal para gamers.",
+    "photo":
+      "https://cosonyb2c.vtexassets.com/arquivos/ids/354845-1600-auto?v=637920912166930000&width=1600&height=auto&aspect=true",
+    "type": ["Auriculares", "Microfono", "Alambrico"],
+    "rate": 8
+  },
+  {
+    "id": "b6c299d5-5cbf-4701-8308-d30f04721a7d",
+    "product": "Torre criollo | AMD 5 5600G, 16GB RAM, 512GB SSD",
+    "brand": "Wevo",
+    "price": 3700000,
+    "state": "Descontinuado",
+    "description":
+      "Nuestra Torre Wevo Criollo combina un diseño elegante, componentes de primera calidad y un rendimiento impecable. Ya sea que necesites potencia para tus proyectos creativos o busques una experiencia de juego inmersiva, esta torre es tu aliada en el área profesional de diseño gráfico, edición de video y juegos intensivos.",
+    "photo": "https://nuevowevo.com/wp-content/uploads/2023/04/prueba.jpg",
+    "type": ["PC"],
+    "rate": 10
+  },
+  {
+    "id": "2e2299e5-8915-41bc-b63f-42db1cdaa821",
+    "product": "Mouse Brigadier T",
+    "brand": "T Dagger",
+    "price": 313500,
+    "state": "Disponible",
+    "description":
+      "El mouse cableado ambidiestro de alto nivel, diseñado para los jugadores más exigentes que necesitan altos DPI y ratones duraderos, con los componentes de calidad que aseguran la calidad de nuestros periféricos T-DAGGER.",
+    "photo":
+      "https://nuevowevo.com/wp-content/uploads/2023/08/BRIGADIER-T-TGM206-2.jpg",
+    "type": ["Mouse", "Alambrico"],
+    "rate": 9
+  },
+  {
+    "id": "eab49006-407c-42ae-b1aa-048e3f60bfc2",
+    "product": "Micrófono Blue Snowball",
+    "brand": "Blue Yeti",
+    "price": 351000,
+    "state": "Disponible",
+    "description":
+      "Snowball ICE ofrece una calidad de audio nítida mejor que la del micrófono integrado en el ordenador.",
+    "photo": "https://nuevowevo.com/wp-content/uploads/2021/01/SNOWBALL.png",
+    "type": ["Microfono", "Alambrico"],
+    "rate": 7
+  }
+]

@@ -2,11 +2,11 @@
   "name": "api-rest",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.js",
+  "main": "app.js",
   "type": "module",
   "scripts": {
-    "s": "node src/app.js",
-    "d": "nodemon src/app.js"
+    "s": "node app.js",
+    "d": "nodemon app.js"
   },
   "keywords": [],
   "author": "",

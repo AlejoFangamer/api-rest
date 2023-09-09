@@ -1,10 +1,19 @@
-import { productsDB } from "../models/products.js";
-import { validatePartialProduct, validateProduct } from "./validateProduct.js";
+import { require } from "../../utils/require.js";
+import { validatePartialProduct, validateProduct } from "../validators/validateProduct.js";
 import crypto from "node:crypto";
+
+const productsDB = require("../api/models/products.json");
 
 export const productController = {
   getAllProducts: (req, res) => {
-    res.send(productsDB);
+    const { type } = req.query;
+    if (type) {
+      const filteredMovies = productsDB.filter((movie) =>
+        movie.type.some((g) => g.toLowerCase() === type.toLowerCase())
+      );
+      return res.json(filteredMovies);
+    }
+    res.json(productsDB);
   },
   getProductsId: (req, res) => {
     const producto = productsDB.find((user) => user.id == req.params.id);
@@ -57,9 +66,9 @@ export const productController = {
     if (index === -1) {
       return res.status(204).send();
     }
-  
+
     productsDB.splice(index, 1);
-  
+
     return res.json({ message: "Producto eliminado con exito" });
-  }
+  },
 };
