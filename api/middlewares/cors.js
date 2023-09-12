@@ -6,7 +6,7 @@ const apiOptions = {
     const ORIGENES_ACEPTADOS = [
       "http://localhost:8080",
       "http://localhost:3001",
-    ];
+        ];
     if (ORIGENES_ACEPTADOS.includes(origin)) {
       return callback(null, true);
     }

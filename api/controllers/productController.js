@@ -1,19 +1,24 @@
 import { require } from "../../utils/require.js";
-import { validatePartialProduct, validateProduct } from "../validators/validateProduct.js";
+import {
+  validatePartialProduct,
+  validateProduct,
+} from "../validators/validateProduct.js";
 import crypto from "node:crypto";
 
 const productsDB = require("../api/models/products.json");
 
 export const productController = {
   getAllProducts: (req, res) => {
-    const { type } = req.query;
-    if (type) {
-      const filteredMovies = productsDB.filter((movie) =>
-        movie.type.some((g) => g.toLowerCase() === type.toLowerCase())
-      );
-      return res.json(filteredMovies);
-    }
-    res.json(productsDB);
+    const filtros = req.query;
+    const filtroProductos = productsDB.filter((producto) => {
+      let valido = true;
+      for (let a in filtros) {
+        //console.log(a, user[a], filtros[a]);
+        valido = valido && producto[a] == filtros[a];
+      }
+      return valido;
+    });
+    return res.send(filtroProductos);
   },
   getProductsId: (req, res) => {
     const producto = productsDB.find((user) => user.id == req.params.id);
