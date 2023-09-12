@@ -1,11 +1,11 @@
-import { require } from "../../utils/require.js";
+import { require } from "../utils/require.js";
 import {
   validatePartialProduct,
   validateProduct,
 } from "../validators/validateProduct.js";
 import crypto from "node:crypto";
 
-const productsDB = require("../api/models/products.json");
+const productsDB = require("../models/products.json");
 
 export const productController = {
   getAllProducts: (req, res) => {

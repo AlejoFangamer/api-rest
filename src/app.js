@@ -1,16 +1,22 @@
 import express from "express";
 import "dotenv/config";
-import { productRouter } from "./api/routes/productsRoutes.js";
-import { apiCors } from "./api/middlewares/cors.js";
+import { productRouter } from "./routes/productsRoutes.js";
+import cors from "cors";
+import fs from "node:fs";
 
 const app = express();
 app.disable("x-powered-by");
 
 app.use(express.json());
-app.use(apiCors);
+app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("Bienvenido a TecnoShop, tu tienda de tecnologia de confianza");
+  fs.readFile("src/views/index.html", function (error, html) {
+    if (error) {
+      throw error;
+    }
+    res.end(html);
+  });
 });
 
 app.use("/products", productRouter);
