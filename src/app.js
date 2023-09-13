@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  fs.readFile("src/views/index.html", function (error, html) {
+  fs.readFile("src/views/WelcomePage/index.html", function (error, html) {
     if (error) {
       throw error;
     }
